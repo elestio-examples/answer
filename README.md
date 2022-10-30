@@ -10,5 +10,5 @@ Deploy Answer server with CI/CD on Elestio
 
 # Once deployed ...
 
-    Login: root
+    Login: [ADMIN_EMAIL]
     password: [ADMIN_PASSWORD]
