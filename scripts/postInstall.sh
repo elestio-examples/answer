@@ -13,6 +13,8 @@ sed -i "s|http://127.0.0.1:9080|https://${DOMAIN}|g" ./answer-data/data/conf/con
 
 docker-compose down;
 docker-compose up -d;
+echo "Waiting for software to be ready ..."
+sleep 30s;
 
 
 # First login
