@@ -8,7 +8,7 @@ sleep 30s;
 target=$(docker-compose port answer 80)
 
 
-sed -i "s|http://127.0.0.1:9080|https://${DOMAIN}|g" ./answer-data/data/conf/config.yaml
+sed -i "s|http://127.0.0.1:9080|https://'"${DOMAIN}"'|g" ./answer-data/data/conf/config.yaml
 
 
 

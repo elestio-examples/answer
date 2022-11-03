@@ -8,6 +8,8 @@ ports:
     path: "/"
     isAuth: false
 environments:
+  - key: "DOMAIN"
+    value: "[CI_CD_DOMAIN]"
   - key: ADMIN_PASSWORD
     value: "random_password"
   - key: "ADMIN_EMAIL"
