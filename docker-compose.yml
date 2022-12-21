@@ -1,7 +1,7 @@
 version: "3.9"
 services:
   answer:
-    image: answerdev/answer:0.4.0
+    image: answerdev/answer:latest
     ports:
       - '172.17.0.1:9080:80'
     restart: always
