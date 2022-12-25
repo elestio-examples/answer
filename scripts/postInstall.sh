@@ -43,7 +43,7 @@ login=$(curl http://${target}/answer/api/v1/user/login/email \
 
   access_token=$(echo $login | jq -r '.data.access_token' )
 
-
+ echo "access token:" $access_token
 # Configure SMTP
 curl http://${target}/answer/admin/api/setting/smtp \
   -X 'PUT' \
@@ -54,3 +54,7 @@ curl http://${target}/answer/admin/api/setting/smtp \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36' \
   --data-raw '{"from_email":"'${DEFAULT_FROM_EMAIL}'","from_name":"answer","smtp_host":"'${EMAIL_HOST}'","encryption":"","smtp_port":'${EMAIL_PORT}',"smtp_authentication":false,"smtp_username":"","smtp_password":"","test_email_recipient":""}' \
   --compressed
+
+
+echo ""
+echo "postInstall completed"
