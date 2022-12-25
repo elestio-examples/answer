@@ -27,7 +27,7 @@ curl http://${target}/installation/init \
 # docker-compose down;
 # docker-compose up -d;
 # # echo "Waiting for software to be ready ..."
-# sleep 30s;
+sleep 5s;
 
 
 # First login
