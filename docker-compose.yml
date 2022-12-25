@@ -33,7 +33,10 @@ services:
   answer:
     image: answerdev/answer
     ports:
-      - '172.17.0.1:9080:80'
+      - '9988:80'
     restart: always
     volumes:
-      - ./answer-data:/data
+      - answer-data:/data
+
+volumes:
+  answer-data:
