@@ -52,5 +52,5 @@ curl http://${target}/answer/admin/api/setting/smtp \
   -H 'authorization: '"${access_token}"'' \
   -H 'content-type: application/json' \
   -H 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36' \
-  --data-raw '{"from_email":"'"${DEFAULT_FROM_EMAIL}"'","from_name":"answer","smtp_host":"'"${EMAIL_HOST}"'","encryption":"","smtp_port":'"${EMAIL_PORT}"',"smtp_authentication":true,"smtp_username":"'"${EMAIL_HOST_USER}"'","smtp_password":"'"${EMAIL_HOST_PASSWORD}"'","test_email_recipient":""}' \
+  --data-raw '{"from_email":"'${DEFAULT_FROM_EMAIL}'","from_name":"answer","smtp_host":"'${EMAIL_HOST}'","encryption":"","smtp_port":'${EMAIL_PORT}',"smtp_authentication":false,"smtp_username":"","smtp_password":"","test_email_recipient":""}' \
   --compressed
