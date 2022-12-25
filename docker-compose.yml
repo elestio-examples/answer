@@ -36,7 +36,4 @@ services:
       - '172.17.0.1:9080:80'
     restart: always
     volumes:
-      - answer-data:/data
-
-volumes:
-  answer-data:
+      - ./answer-data:/data
