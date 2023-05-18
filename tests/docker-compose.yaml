@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  answer:
+    image: answerdev/answer:latest
+    ports:
+      - '172.17.0.1:9988:80'
+    restart: always
+    volumes:
+      - ./data:/data
