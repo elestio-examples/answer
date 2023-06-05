@@ -65,20 +65,6 @@ Here are some example snippets to help you get started creating a container.
         volumes:
         - ./data:/data
 
-### Environment variables
-
-|      Variable      |   Value (example)    |
-| :----------------: | :------------------: |
-|       DOMAIN       |     your.domain      |
-|   ADMIN_PASSWORD   |       xxxxxxxx       |
-|    ADMIN_EMAIL     |  admin@yourmail.com  |
-|      ANYMAIL       |         True         |
-| DEFAULT_FROM_EMAIL | admin@vm.elestio.app |
-|     EMAIL_HOST     |      172.17.0.1      |
-|     EMAIL_PORT     |          25          |
-|   EMAIL_USE_TLS    |        False         |
-|   EMAIL_USE_SSL    |        False         |
-
 # Maintenance
 
 ## Logging
