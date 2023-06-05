@@ -36,6 +36,15 @@ Copy the .env file from tests folder to the project directory
 
 Edit the .env file with your own values.
 
+Create data folders with correct permissions
+
+    mkdir ./answer-data
+    chown -R 1000:1000 ./answer-data
+
+Create data folders with correct permissions
+
+    mkdir ./answer-data
+
 Run the project with the following command
 
     docker-compose up -d
@@ -46,10 +55,10 @@ You can access the Web UI at: `http://your-domain:9090`
 
 Here are some example snippets to help you get started creating a container.
 
-    version: "3.9"
+    version: "3.3"
     services:
     answer:
-        image: answerdev/answer:latest
+        image: elestio4test/answer:latest
         ports:
         - '172.17.0.1:9988:80'
         restart: always
@@ -58,17 +67,17 @@ Here are some example snippets to help you get started creating a container.
 
 ### Environment variables
 
-|          Variable          |   Value (example)    |
-| :------------------------: | :------------------: |
-|           DOMAIN           |     your.domain      |
-|       ADMIN_PASSWORD       |       xxxxxxxx       |
-|        ADMIN_EMAIL         |  admin@yourmail.com  |
-|          ANYMAIL           |         True         |
-|     DEFAULT_FROM_EMAIL     | admin@vm.elestio.app |
-|         EMAIL_HOST         |      172.17.0.1      |
-|         EMAIL_PORT         |          25          |
-|       EMAIL_USE_TLS        |        False         |
-|       EMAIL_USE_SSL        |        False         |
+|      Variable      |   Value (example)    |
+| :----------------: | :------------------: |
+|       DOMAIN       |     your.domain      |
+|   ADMIN_PASSWORD   |       xxxxxxxx       |
+|    ADMIN_EMAIL     |  admin@yourmail.com  |
+|      ANYMAIL       |         True         |
+| DEFAULT_FROM_EMAIL | admin@vm.elestio.app |
+|     EMAIL_HOST     |      172.17.0.1      |
+|     EMAIL_PORT     |          25          |
+|   EMAIL_USE_TLS    |        False         |
+|   EMAIL_USE_SSL    |        False         |
 
 # Maintenance
 

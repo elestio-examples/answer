@@ -6,4 +6,4 @@ services:
       - "172.17.0.1:9988:80"
     restart: always
     volumes:
-      - ./data:/data
+      - ./answer-data:/data

@@ -3,9 +3,6 @@
 
 apt install -y jq
 
-# mkdir -p ./data
 mkdir ./answer-data
-
-# chown -R 1000:1000 ./data
-# chown -R 1000:1000 ./answer-data
+chown -R 1000:1000 ./answer-data
 
