@@ -100,8 +100,8 @@ That's it! With these simple steps, you can easily backup and restore your data 
 
 # Links
 
-- <a target="_blank" href="https://docs.answer.co/docs/getting-started">Answer documentation</a>
+- <a target="_blank" href="https://answer.dev/docs/">Answer documentation</a>
 
-- <a target="_blank" href="https://github.com/ever-co/ever-answer">Answer Github repository</a>
+- <a target="_blank" href="https://github.com/answerdev/answer">Answer Github repository</a>
 
-- <a target="_blank" href="https://docs.answer.co/docs/getting-started">Elestio/answer Github repository</a>
+- <a target="_blank" href="https://github.com/elestio-examples/answer">Elestio/answer Github repository</a>
