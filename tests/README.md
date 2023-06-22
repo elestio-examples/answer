@@ -49,7 +49,7 @@ Run the project with the following command
 
     docker-compose up -d
 
-You can access the Web UI at: `http://your-domain:9090`
+You can access the Web UI at: `http://your-domain:9988`
 
 ## Docker-compose
 
@@ -60,10 +60,10 @@ Here are some example snippets to help you get started creating a container.
     answer:
         image: elestio4test/answer:latest
         ports:
-        - '172.17.0.1:9988:80'
+          - '172.17.0.1:9988:80'
         restart: always
         volumes:
-        - ./data:/data
+          - ./data:/data
 
 # Maintenance
 
