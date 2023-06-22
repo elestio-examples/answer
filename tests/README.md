@@ -57,13 +57,13 @@ Here are some example snippets to help you get started creating a container.
 
     version: "3.3"
     services:
-    answer:
-        image: elestio4test/answer:latest
-        ports:
-          - '172.17.0.1:9988:80'
-        restart: always
-        volumes:
-          - ./data:/data
+        answer:
+            image: elestio4test/answer:latest
+            ports:
+            - '172.17.0.1:9988:80'
+            restart: always
+            volumes:
+            - ./data:/data
 
 # Maintenance
 
